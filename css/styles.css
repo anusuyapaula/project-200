@@ -2,6 +2,7 @@ body {
 	font-size: 20px;
 	background-color: grey;
 	font-family: 'Oxygen', sans-serif;
+	color: white;
 }
 * {
 	box-sizing: border-box;
@@ -15,22 +16,22 @@ body {
 	padding-bottom: 20px;
 }
 .logo-image {
-	background: url(../image/dream.png) no-repeat;
-	width: 100px;
-	height: 95px;
+	background: url(../image/dreamlogo.png);
+	width: 110px;
+	height: 118px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
 .navbar-brand h1 {
-	font-family: 'Lora',serif;
-	font-style: italic;
-	color: blue;
+	font-family: 'Castoro', serif;
+	color: #befaee;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	text-align: center;
 }
+
 .navbar-brand a:hover,.navbar-brand a:focus {
 	text-decoration: none;
 }
@@ -40,23 +41,56 @@ h1:hover {
 
 
 #nav-list {
-	margin-top: 15px;
+	margin-top: 30px;
+	position: relative;
 }
+
 #nav-list a {
 	color: white;
 	text-align: center;
+	padding-right: 10px;
+	text-decoration: none;
 }
-#nav-list a:link,#nav-list a:visited {
+#nav-list a:link {
 	color: white;
 }
-#nav-list a:hover,#nav-list a:active {
-	color: #FF007F;
+#nav-list a:hover {
+	color: blue;
 }
+#nav-list a:active {
+	color: red;
+}
+
 #nav-list a span {
 	font-family: 'Viaoda Libre', cursive;
 	font-size: 1em;
 
 }
+
+/*Dropdown*/
+.dropdown {
+	display: none;
+}
+#nav-list li:hover .dropdown {
+	display: block;
+	position: absolute;
+	left: 0%;
+	top: 100%;
+	background-color: black;
+	z-index: 5;
+
+}
+
+.dropdown ul {
+	margin: 10px;
+	list-style-type: none;
+
+}
+.dropdown ul li {
+	width: 150px;
+	padding: 10px;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header span {
 	border: 1px solid red;
 }
@@ -78,7 +112,6 @@ div input {
 	color:red
 }
 /*Ende Header*/
-
 .container-fluid .jumbotron {
 	background-color: #000033;
 	box-shadow: 0 0 20px #000033;
@@ -93,6 +126,7 @@ div input {
 	animation: slider 60s infinite;
 	background-position: center;
 }
+
 @keyframes slider{
 	0%{
 		background-image: url(https://c4.wallpaperflare.com/wallpaper/289/516/961/3-idiots-wallpaper-preview.jpg);
@@ -123,16 +157,16 @@ div input {
 	}
 }
 
-#hollywood {
+
+#line {
 	font-style: normal;
 	padding-left: 15px;
 	background-color: maroon;
-	font-weight: bold;
 	color: white;
 }
 
 
-#endgame, #inception, #Hobbs, #matrix {
+.movie {
 	height: 250px;
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -140,10 +174,16 @@ div input {
 	border:2px solid #3F0C1F;
 	position: relative;
 	overflow: hidden;
+	font-family: 'Viaoda Libre', cursive;
+	font-weight: bold;
+	
 }
 
-#endgame:hover, #inception:hover, #Hobbs:hover, #matrix:hover {
+.movie:hover{
 	box-shadow: 0 1px 5px 5px black;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	height: 255px;
 }
 #endgame {
 	background: url(../image/endgame.jpg) no-repeat;
@@ -165,18 +205,129 @@ div input {
 	background-position: center;
 	background-size: cover;
 }
+#dark {
+	background: url(../image/dark.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#moneyheist {
+	background: url(../image/moneyheist.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#taqdeer {
+	background: url(../image/taqdeer.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#mirzapur {
+	background: url(../image/mirzapur.jpg);
+	background-position:center;
+	background-size: cover;
+}
+#Geetha {
+	background: url(../image/geetha.jpg);
+	background-position:center;
+	background-size: cover;	
+}
+#parasite {
+	background: url(../image/parasite.jpg);
+	background-position:center;
+	background-size: cover;	
+}
+#dhoni {
+	background: url(../image/dhoni.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#charlie {
+	background: url(../image/charlie.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#fast {
+	background: url(../image/fast.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#karnan {
+	background: url(../image/karnan.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#blinders {
+	background: url(../image/blinders.jpg);
+	background-position: center;
+	background-size: cover;	
+}
+#Drishyam2 {
+	background: url(../image/Drishyam2.jpg);
+	background-position: center;
+	background-size: cover;	
+}
 
-#endgame span, #inception span, #Hobbs span, #matrix span {
+
+.movie span{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	text-align: center;
-	color: #fff;
-	font-size: 1.5em;
+	color: yellow;
+	font-size: 1em;
 	background-color: black;
-	opacity: 0.5;
+	opacity: 0.7;
 }
+
+/*Footer*/
+.panel-footer {
+	background-color: #222;
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+}
+
+.panel-footer div .row {
+	margin-bottom: 30px;
+}
+#about {
+	line-height: 2;
+}
+#contact > span,#about > span {
+	font-size: 1.2em;
+	margin-bottom: 0px;
+}
+section {
+	color: white;
+}
+#quote {
+	margin-right: 50px;
+}
+#quote p {
+	font-style: italic;
+}
+#quote p:nth-child(2) {
+	margin-top: 25px;
+}
+#quote p:nth-child(3) {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#contact i {
+	font-size: 2em;
+	margin: 20px;
+}
+#copy {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+/*End Footer*/
+
+
+
 
 /*Large Device Only*/
 @media (min-width: 1200px) {
@@ -193,9 +344,9 @@ div input {
 /*Medium Device Only*/
 @media (min-width: 992px) and (max-width: 1199px) {
 	.logo-image {
-	background: url(../image/dream.png) no-repeat;
-	width: 90px;
-	height: 100px;
+	background: url(../image/dreamlogo.png) no-repeat;
+	width: 110px;
+	height: 118px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	margin-right: 5px;
@@ -233,9 +384,8 @@ h1:hover {
 
 }
 .navbar-brand h1 {
-	font-family: 'Lora',serif;
-	font-style: italic;
-	color: blue;
+	font-family: 'Castoro', serif;
+	color: #FFE4C4;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 15px;
@@ -257,8 +407,7 @@ h1:hover {
 }
 	.navbar-brand h1 {
 	font-family: 'Lora',serif;
-	font-style: italic;
-	color: blue;
+	color: #FFE4C4;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 8px;
@@ -304,4 +453,34 @@ h1:hover {
 	color: red;
 
 }
+
+#about,#contact,#quote {
+	text-align: center;
+}
+
+/*Dropdown*/
+#nav-list {
+position: relative;
+} 
+ .dropdown {
+ 	position: relative;
+	display: block;
+	background-color: black;
+	overflow: hidden;
+
+}
+.dropdown ul {
+	margin: 10px;
+	list-style-type: none;
+
+}
+.dropdown ul li {
+	width: 100%;
+	padding: 10px;
+	
+}
+.dropdown ul li a {
+	text-align: center;
+}
+
 }
